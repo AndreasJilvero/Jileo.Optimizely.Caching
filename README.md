@@ -38,3 +38,9 @@ public class ContentAreaCacheTagHelperInitializationModule : IInitializableModul
 ```
 @addTagHelper Jileo.Optimizely.Caching.TagHelper.ContentAreaCacheTagHelper, Jileo.Optimizely.Caching
 ```
+4. Use in .cshtml files
+```
+<content-area-cache>
+  @Html.PropertyFor(x => x.ContentArea)
+</content-area-cache>
+```
